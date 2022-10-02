@@ -17,7 +17,7 @@ result.addEventListener("click", () => {
       t2[i].textContent = ((1 / (2 * a * b)) * Math.log((x * Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2))) / (2 * y * Math.sqrt(Math.pow(c, 2) + Math.pow(b, 2))))).toFixed(2);
     } else {
       t1[i].textContent = ((1 / Math.pow(a - b, 2)) * (1 / (a + x) - 1 / Math.pow(1 - x, 2)) + (2 / Math.pow(a - y, 3)) * Math.sqrt(y / a) * x).toFixed(2);
-      t2[i].textContent = ((b / (2 * a)) * (Math.sin(a * x) / Math.pow(a * x, 2)) + ((2 * a) / b) * Math.cos(a * x)).toFixed(2);
+      t2[i].textContent = ((b / (2 * a)) * (Math.sin(a * x) / Math.pow(Math.cos(a * x), 2)) + ((2 * a) / b) * Math.cos(a * x)).toFixed(2);
     }
   }
 });
